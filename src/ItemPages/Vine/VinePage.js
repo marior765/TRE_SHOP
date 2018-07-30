@@ -7,6 +7,7 @@ import './VinePage.css'
 import { connect } from 'react-redux';
 import * as actionTypes from '../../Actions/consts';
 import { initialState } from '../../Reducers/VineCollection';
+import { modal } from '../../Utilits/Animations';
 
 const ContainerPage = styled.div`
     display:flex;
@@ -232,6 +233,7 @@ class VinePage extends Component {
                 onAfterOpen={this.afterOpenModal}
                 onRequestClose={this.closeModal}
                 contentLabel="Example Modal"
+                className='modal'
                 >
                 <div className='inmodal'>
                     <img alt='arrow' src={require('../../Assets/Arrow/miniArrow.svg')} />    <strong>Корзина</strong>

@@ -39,9 +39,10 @@ hr {
     margin-top: 40px;
 }
 
-.modal-img {
-    margin-left: 40px;
-    margin-top: 20px;
+.order-img {
+    position: absolute;
+    margin-left: 60px;
+    margin-top:20px;
 }
 
 .Result {

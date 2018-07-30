@@ -122,7 +122,7 @@ class OrderPage extends Component {
                     <div className='inputFields'>
                         <strong>2. Товары в заказе</strong>
                         <br />
-                        <img width='38px' height='139px' src={BestVineArr[index].src} alt='vine' className='modal-img' />
+                        <img width='38px' height='139px' src={BestVineArr[index].src} alt='vine' className='order-img' />
                         <div className='modal-counter'>
                             <p className='Shanon'>
                                 {BestVineArr[index].fullName}
@@ -134,7 +134,7 @@ class OrderPage extends Component {
                                     <span>+</span> 
                                 </CounterContainer>
                                 <span> {BestVineArr[index].value}</span>
-                                <strong>{BestVineArr[index].cost} </strong> 
+                                <strong>{BestVineArr[index].cost} грн</strong> 
                             </CountInfo>
                         </div>
                         <hr />
@@ -154,7 +154,7 @@ class OrderPage extends Component {
                         <br />
                         <Ul>
                             <Li>
-                                <Text>К-во(1 бут.)</Text><Caption>{BestVineArr[index].cost}</Caption>
+                                <Text>К-во(1 бут.)</Text><Caption>{BestVineArr[index].cost} грн</Caption>
                             </Li>
                             <Li>
                                 <Text>Скидка</Text><Caption>0 грн</Caption>
@@ -163,7 +163,7 @@ class OrderPage extends Component {
                                 <Text>Доставка</Text><Caption>100 грн</Caption>
                             </Li>
                             <input className='input_l' type='text' placeholder='Промокод' /><ButtonB><ButtonText>Применить</ButtonText></ButtonB>
-                            <Li><strong>Итого</strong><Caption>{BestVineArr[index].cost}</Caption></Li>
+                            <Li><strong>Итого</strong><Caption>{BestVineArr[index].cost} грн</Caption></Li>
                         </Ul>
                     </div>
                 </Container>

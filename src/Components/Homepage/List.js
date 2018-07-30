@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import {VineMod} from './BestVine';
+import { bottle } from '../../Utilits/Animations';
 
 const Container = styled.div`
     display:flex;
@@ -50,6 +51,7 @@ const Best = styled.div`
     transform: scale(1.7,1.7);
     position: absolute;
     right: 30%;
+    animation: ${bottle} 300ms linear;
 `
 
 class List extends Component {
